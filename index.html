@@ -115,7 +115,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-md-8 col-lg-6 col-xs-offset-3 col-md-offset-2 col-lg-offset-3">
-                    <div class="well">
+                    <div class="well fader">
                         <h1 class="text-center">Nathan Martin</h1><hr>
                         <p class="text-center">Web Development &amp; Design</p>
                     </div>
@@ -249,16 +249,22 @@
         $(document).ready(function() {
             var $window = $(window);
             var $background = $('.background');
+            var $fader = $('.fader');
             var topOffset = 50;
             var speedFactor = 4;
 
-            function parallax(){
+            function parallax() {
                 var scrolled = ($window.scrollTop() / speedFactor) + topOffset;
                 $background.css('top', (scrolled) + 'px');
             }
 
-            $window.scroll(function(e){
+            function fader() {
+                $fader.css({'opacity' : 1-(($window.scrollTop())/325)}); 
+            }
+
+            $window.scroll(function(e) {
                 parallax();
+                fader();
             });
         });
     </script>   
