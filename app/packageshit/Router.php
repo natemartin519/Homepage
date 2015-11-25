@@ -7,10 +7,12 @@ class Router
 	protected $uri;
 	protected $request;
 
-	function __construct($server, $routes) {
+	protected $postData;
+
+	function __construct($server, $routes, $postData) {
+		$this->postData = $postData;
 		$this->uri = $server['REQUEST_URI'];
 		$this->request = $server['REQUEST_METHOD'];
-
 		$this->routes = $routes;
 	}
 
@@ -24,7 +26,7 @@ class Router
 				if ($this->request === 'GET') {
 					return TEMPLATE_PATH . '/' . $controller->get() . '.html';
 				} elseif ($this->request === 'POST') {
-					return TEMPLATE_PATH . '/' . $controller->post() . '.html';
+					return TEMPLATE_PATH . '/' . $controller->post($this->postData) . '.html';
 				}
 			}
 		}
