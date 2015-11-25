@@ -29,6 +29,6 @@ class Router
 			}
 		}
 
-		return TEMPLATE_PATH . '404.html';
+		return TEMPLATE_PATH . '/' . '404.html';
 	}
 }
