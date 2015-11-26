@@ -1,7 +1,41 @@
 <?php namespace App;
 
-interface Message 
+class Message
 {
-	public function getMessageString();
-	public function getMessageJSON();
+	protected $address;
+	protected $name;
+	protected $subject;
+	protected $body;
+
+	public function setAddress($address) {
+		$this->address = $address;
+	}
+
+	public function getAddress() {
+		return $this->address;
+	}
+
+	public function setName($name) {
+		$this->name = strip_tags($name);
+	}
+
+	public function getName() {
+		return $this->name;
+	}
+
+	public function setSubject($subject) {
+		$this->subject = strip_tags($subject);
+	}
+
+	public function getSubject() {
+		return $this->subject;
+	}
+
+	public function setMessageBody($body) {
+		$this->body = strip_tags($body);
+	}
+
+	public function getMessageBody() {
+		return $this->body;
+	}
 }

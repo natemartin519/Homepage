@@ -6,7 +6,7 @@ use App\Email;
 class Contact
 {
 	public function post($postData) {
-		$email = new Email();
+		$email = new Message();
 
 		$email->setName($postData['name']);
 		$email->setAddress($postData['email']);
