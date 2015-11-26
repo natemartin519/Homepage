@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 
 use App\Mailer;
-use App\Email;
+use App\Message;
 
 class Contact
 {
