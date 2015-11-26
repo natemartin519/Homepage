@@ -14,7 +14,6 @@ class Contact
 		$email->setMessageBody($postData['message']);
 
 		$mailer = new Mailer($email);
-		var_dump($mailer);
 		$mailer->Send();
 		
 		return 'index';
