@@ -6,16 +6,15 @@ use App\Message;
 class Contact
 {
 	public function post($postData) {
-		$email = new Message();
-
-		$email->setName($postData['name']);
-		$email->setAddress($postData['email']);
-		$email->setSubject($postData['subject']);
-		$email->setMessageBody($postData['message']);
+		$email = new Message($postData['email'], 
+							 $postData['name'], 
+							 $postData['subject'], 
+							 $postData['message']
+							 );
 
 		$mailer = new Mailer($email);
-		$mailer->Send();
-		
+
+		$mailer->Send();		
 		return 'index';
 	}
 }

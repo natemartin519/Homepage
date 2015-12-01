@@ -7,6 +7,13 @@ class Message
 	protected $subject;
 	protected $body;
 
+	function __construct($address, $name, $subject, $message) {
+		$this->setAddress($address);
+		$this->setName($name);
+		$this->setSubject($subject);
+		$this->setMessage($message);
+	}
+
 	public function setAddress($address) {
 		$this->address = $address;
 	}
