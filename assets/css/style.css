@@ -27,6 +27,10 @@ footer {
     padding-top: 20px;
 }
 
+.top-padding {
+    margin-top: 40px;
+}
+
 .background {
     background: url('/assets/images/bg.jpg') no-repeat center center;
     position: absolute;
@@ -63,8 +67,18 @@ footer {
 .jumbotron .well {
     position: absolute;
     border: 0;
-    margin-top: 150px;
+    margin-top: 140px;
     background: transparent;
+}
+.btn-outline {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-outline:hover {
+    color: #333;
+    background-color: #fff;
 }
 
 #about,
