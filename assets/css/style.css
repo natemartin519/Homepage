@@ -57,10 +57,6 @@ footer {
     background: rgba(0, 0, 0, 0.35);
 }
 
-.fader {
-    margin-top: 12em;
-}
-
 .btn-outline {
     color: #fff;
     background-color: transparent;
@@ -73,8 +69,9 @@ footer {
 }
 
 .jumbotron {
-    margin-bottom: 0;
-    height: 650px; /* same height as background */
+    display: flex;
+    align-items: center;
+    height: 90vh; /* same height as background */
     color: #fff;
     background: transparent;
 }     
