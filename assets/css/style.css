@@ -63,8 +63,7 @@ footer {
 .jumbotron .well {
     border: 0;
     margin-top: 150px;
-    border-color: rgba(85, 85, 85, 0.6);
-    background-color: rgba(0, 0, 0, 0.2);
+    background: transparent;
 }
 
 #about,
