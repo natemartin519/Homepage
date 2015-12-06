@@ -6,12 +6,13 @@ $(document).ready(function() {
     var speedFactor = 4;
 
     function parallax() {
-        var scrolled = ($window.scrollTop() / speedFactor) + topOffset;
-        $background.css('top', (scrolled) + 'px');
+        var scrolled = ($window.scrollTop() / speedFactor);
+        $background.css('top', (scrolled + topOffset) + 'px');
+        $fader.css('top', (scrolled * 2) + 'px');
     }
 
     function fader() {
-        $fader.css({'opacity' : 1 - ($window.scrollTop() / 325)});
+        $fader.css('opacity', 1 - ($window.scrollTop() / 400));
     }
 
     $window.scroll(function(e) {
