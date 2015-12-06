@@ -71,7 +71,7 @@ footer {
 .jumbotron {
     display: flex;
     align-items: center;
-    height: 90vh; /* same height as background */
+    height: 650px; /* same height as background */
     color: #fff;
     background: transparent;
 }     
