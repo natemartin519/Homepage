@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     function parallax() {
         var scrolled = ($window.scrollTop() / speedFactor);
-        $background.css('top', (scrolled + topOffset) + 'px');
-        $fader.css('top', (scrolled * 2) + 'px');
+        $background.css('transform', 'translateY(' + scrolled + 'px)');
+        $fader.css('transform', 'translateY(' + (scrolled * 2) + 'px)');
     }
 
     function fader() {
