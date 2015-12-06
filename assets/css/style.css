@@ -66,14 +66,9 @@ footer {
 
 .jumbotron h1 {
     margin-bottom: 0;
+    padding-top: 140px;
 }
 
-.jumbotron .well {
-    position: absolute;
-    border: 0;
-    margin-top: 140px;
-    background: transparent;
-}
 .btn-outline {
     color: #fff;
     background-color: transparent;
