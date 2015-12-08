@@ -84,10 +84,18 @@ footer {
     min-height: 30px;
 }
 
-.navbar-nav>li>a {
+.navbar-brand, .navbar-nav>li>a {
     height: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.nav>li>a {
+    padding: 10px 25px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 #about,
