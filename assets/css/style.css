@@ -79,23 +79,28 @@ footer {
 }
 
 .navbar-default {
-    position: absolute;
     border: 0;
-    margin-bottom: 0;
-    height: 5em;
-    background: transparent;
+    margin-bottom: 0;   
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-    font-size: 16px;
-    padding: 1em 1.7em;
-    padding-top: 2em;
-}
+@media (min-width: 768px) {
+    .navbar-default {
+        position: absolute;
+        height: 5em;
+        background: transparent;   
+    }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #333;
-    background-color: #fff;
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        font-size: 16px;
+        padding: 1em 1.7em;
+        padding-top: 2em;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #333;
+        background-color: #fff;
+    }
 }
 
 .navbar .navbar-collapse {
