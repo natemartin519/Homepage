@@ -90,8 +90,8 @@ footer {
 }
 
 .navbar {
-    height: 5em;
-    background: transparent;   
+    height: 50px;
+    background-color: rgba(51, 51, 51, 0.3);   
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -120,10 +120,7 @@ footer {
     text-align: center;
     border: 0;
     box-shadow: none; 
-}
-
- {
-   background-color: #fff!important;
+    background-color: rgba(51, 51, 51, 0.3);   
 }
 
 .navbar-toggle {
@@ -140,6 +137,11 @@ footer {
 }
  
 @media (min-width: 768px) {
+    .navbar {
+        height: 5em;
+        background: transparent;
+    }
+
     .navbar-default .navbar-nav>li>a {
         padding-top: 2em;
     }  
