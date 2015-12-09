@@ -12,7 +12,7 @@ $(document).ready(function() {
     }
 
     function fader() {
-        $fader.css('opacity', 1 - ($window.scrollTop() / 400));
+        $fader.css('opacity', 1 - ($window.scrollTop() / 450));
     }
 
     $window.scroll(function(e) {
