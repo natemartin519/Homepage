@@ -15,8 +15,15 @@ $(document).ready(function() {
         $fader.css('opacity', 1 - ($window.scrollTop() / 450));
     }
 
+
     $window.scroll(function(e) {
         parallax();
         fader();
     });
+});
+
+$(document).on('click.nav','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') || $(e.target).is('button')) {
+        $(this).collapse('hide');
+    }
 });
