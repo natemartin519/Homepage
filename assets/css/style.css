@@ -30,6 +30,11 @@ footer {
     padding-top: 20px;
 }
 
+#about,
+#contact {
+    background-color: rgb(200, 200, 200);
+}
+
 .top-padding {
     margin-top: 40px;
 }
@@ -96,16 +101,46 @@ footer {
     padding-top: 2em;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 16px;
+    padding: 1em 1.7em;
+}
+
 .navbar-default .navbar-nav>li>a:hover {
     color: #333;
     background-color: #fff;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+.navbar-nav {
+    margin: 0 -15px;
 }
 
-#about,
-#contact {
-    background-color: rgb(200, 200, 200);
+.navbar-collapse {
+    text-align: center;
+    border: 0;
+    box-shadow: none; 
+}
+
+ {
+   background-color: #fff!important;
+}
+
+.navbar-toggle {
+    border-color: #fff !important;
+}
+
+.icon-bar,
+.navbar-toggle:hover {
+    background-color: #fff !important;
+}
+
+.navbar-toggle:hover > .icon-bar {
+    background-color: #333 !important;    
+}
+ 
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav>li>a {
+        padding-top: 2em;
+    }  
 }
