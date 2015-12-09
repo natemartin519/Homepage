@@ -142,6 +142,10 @@ footer {
         background: transparent;
     }
 
+    .navbar-collapse {
+        background: transparent;
+    }
+
     .navbar-default .navbar-nav>li>a {
         padding-top: 2em;
     }  
