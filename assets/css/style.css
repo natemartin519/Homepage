@@ -47,11 +47,6 @@ footer {
     padding: 0.7em 0.5em;
 }
 
-.panel-default {
-    flex: 1;
-    /*min-height:100%;*/
-}
-
 .top-padding {
     margin-top: 40px;
 }
