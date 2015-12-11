@@ -30,6 +30,10 @@ footer {
     padding-top: 20px;
 }
 
+hr {
+    border-color: #ddd;
+}
+
 #about,
 #contact {
     background-color: #eee;
@@ -38,13 +42,16 @@ footer {
 .flex-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .flex-item {
     display: flex;
     width: 100%;
-    padding: 0.7em 0.5em;
+    padding: 0 0.7em;
+}
+
+.panel-default {
+    flex: 1;
 }
 
 .top-padding {
