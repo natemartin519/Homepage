@@ -11,7 +11,7 @@ class Message
 		$this->setAddress($address);
 		$this->setName($name);
 		$this->setSubject($subject);
-		$this->setMessage($message);
+		$this->setMessageBody($message);
 	}
 
 	public function setAddress($address) {
